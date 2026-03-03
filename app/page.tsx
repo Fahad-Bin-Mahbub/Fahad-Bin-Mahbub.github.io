@@ -2,32 +2,32 @@ import { Hero } from "@/components/hero";
 import { Section } from "@/components/section";
 import { ResearchCard } from "@/components/research-card";
 import { Timeline } from "@/components/timeline";
-import { 
-  awards, 
-  experience, 
-  projects, 
-  research, 
-  skills, 
-  certifications, 
-  activities,
-  education,
-  problemSolving
+import {
+	awards,
+	experience,
+	projects,
+	research,
+	skills,
+	certifications,
+	activities,
+	education,
+	problemSolving,
 } from "@/lib/data";
 import { Contact } from "@/components/contact";
 import { ProjectsGrid } from "@/components/projects-grid";
-import { 
-  GraduationCap, 
-  Trophy, 
-  Award, 
-  Code2, 
-  BadgeCheck, 
-  Users,
-  ExternalLink 
+import {
+	GraduationCap,
+	Trophy,
+	Award,
+	Code2,
+	BadgeCheck,
+	Users,
+	ExternalLink,
 } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
-  return (
+	return (
 		<>
 			{/* <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-full h-full bg-primary/10 rounded-full blur-[120px] pointer-events-none opacity-10 dark:opacity-30 mix-blend-multiply dark:mix-blend-screen" /> */}
 
@@ -106,7 +106,23 @@ export default function Home() {
 					))}
 				</div>
 			</Section>
-
+			<Section
+				id="experience"
+				eyebrow="Career"
+				title="Experience"
+				description="Professional timeline."
+			>
+				<div className="max-w-4xl mx-auto">
+					<Timeline
+						items={experience.map((e) => ({
+							title: `${e.role} @ ${e.company}`,
+							subtitle: e.location,
+							meta: e.date,
+							bullets: [...e.bullets],
+						}))}
+					/>
+				</div>
+			</Section>
 			<Section
 				id="research"
 				eyebrow="Research"
@@ -197,24 +213,6 @@ export default function Home() {
 							</Link>
 						))}
 					</div>
-				</div>
-			</Section>
-
-			<Section
-				id="experience"
-				eyebrow="Career"
-				title="Experience"
-				description="Professional timeline."
-			>
-				<div className="max-w-4xl mx-auto">
-					<Timeline
-						items={experience.map((e) => ({
-							title: `${e.role} @ ${e.company}`,
-							subtitle: e.location,
-							meta: e.date,
-							bullets: [...e.bullets],
-						}))}
-					/>
 				</div>
 			</Section>
 
