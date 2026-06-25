@@ -183,7 +183,17 @@ export const experience = [
     ],
   },
   {
-    role: "Software Engineer (Remote)",
+    role: "QA Engineer(Remote)",
+    company: "Outlier—AI Training Platform",
+    location: "Remote",
+    date: "Oct 2024 — Jan 2026",
+    bullets: [
+      "Contributed to several projects, writing desired model outputs for different prompt types (e.g., database queries, front-end code generation, general query prompts, and voice inputs).",
+      "Focused on correctness, completeness, and evaluation-friendly response structure.",
+    ],
+  },
+  {
+    role: "Software Engineer(Remote)",
     company: "New Vision Institute of Technology",
     location: "Texas, USA",
     date: "Oct 2023 — Apr 2024",
@@ -201,19 +211,10 @@ export const experience = [
       "Built full-stack features with TypeScript, React, Redux Toolkit, Node.js, Express.js, and MongoDB.",
       "Implemented a custom attendance system inside the instructor portal.",
       "Integrated Zoom + Google Meet management to support online classes and live sessions.",
-      "Developed mobile wallet frontend with React Native including KYC verification and QR payments.",
+      "Developed mobile wallet frontend with React Native, including KYC verification and QR payments.",
     ],
   },
-  {
-    role: "AI Training Contributor",
-    company: "Outlier — AI Training Platform",
-    location: "Remote",
-    date: "Oct 2024 — Jan 2026",
-    bullets: [
-      "Contributed to several projects, writing desired model outputs for different prompt types (e.g., database queries, front-end code generation, general query prompts, and voice inputs).",
-      "Focused on correctness, completeness, and evaluation-friendly response structure.",
-    ],
-  },
+  
 ] as const;
 
 export const education = [
