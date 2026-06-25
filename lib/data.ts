@@ -9,7 +9,6 @@ export const person = {
   headline: "Full‑Stack Developer · HCI / Usable Security Researcher",
   location: "Bangladesh",
   email: "fahadbm3234@gmail.com",
-  // Optional: add your phone or remove it if you don't want it public
   phone: "+880 1878422339",
   social: [
     {
@@ -173,6 +172,16 @@ export const research: Research[] = [
 ];
 
 export const experience = [
+  {
+    role: "Lecturer, Department of Computer Science and Engineering",
+    company: "Leading University",
+    location: "Sylhet, Bangladesh",
+    date: "Jun 2026 — Present",
+    bullets: [
+      "Conducting lectures and laboratory sessions on mathematical reasoning, logic, and Flutter-based mobile application development.",
+      "Designing assessments, laboratory exercises, and course materials to support student learning outcomes.",
+    ],
+  },
   {
     role: "Software Engineer (Remote)",
     company: "New Vision Institute of Technology",
