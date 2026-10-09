@@ -90,7 +90,7 @@ export function Hero() {
 									? "border-primary bg-primary/10 text-primary"
 									: "border-border text-muted-foreground hover:bg-primary/10 hover:text-primary",
 							].join(" ")}
-							aria-label="Copy email"
+							aria-label="copy email"
 						>
 							{/* Icon swap */}
 							<span className={copied ? "animate-pulse" : ""}>
