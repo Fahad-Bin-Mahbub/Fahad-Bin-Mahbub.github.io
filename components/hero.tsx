@@ -6,6 +6,7 @@ import { ArrowRight, Download, Github, Linkedin, Mail, Check } from "lucide-reac
 import { person } from "@/lib/data";
 import { withBasePath } from "@/lib/utils";
 
+//gfuysgbfiuygsfgisf
 export function Hero() {
    const image = withBasePath("/Fahad Bin Mahbub Photo.jpg");
    const [copied, setCopied] = useState(false);
